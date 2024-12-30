@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Topics</title>
+</head>
+
+<body>
+    <h1>Trending Topics</h1>
+    <p>These are the most happening topics as on {{ data["datetime"] }}:</p>
+    <ul>
+        <li>{{ data["trend1"] }}</li>
+        <li>{{ data["trend2"] }}</li>
+        <li>{{ data["trend3"] }}</li>
+        <li>{{ data["trend4"] }}</li>
+        <li>{{ data["trend5"] }}</li>
+    </ul>
+    <p>The IP address used for this query was {{ data["ip_address"] }}.</p>
+    <h2>JSON Extract:</h2>
+    <pre>{{ data }}</pre>
+    <a href="/">Click here to run the query again</a>
+</body>
+
+</html>
